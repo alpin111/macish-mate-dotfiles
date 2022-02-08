@@ -1,0 +1,258 @@
+
+
+@import url("gtk-main.css");
+
+
+
+
+
+
+
+
+
+progressbar {
+   padding: 0;
+   border: none;
+   color: gray;
+   background-color: transparent; }
+   progressbar progress {
+     border: 1px solid #000055;
+     border-radius: 0px;
+     background-image: linear-gradient(to bottom, #333399, #FFFFFF, #000055);
+     box-shadow: inset 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px rgba(0, 0, 0, 0.6); }
+   progressbar.vertical progress {
+     background-image: linear-gradient(to right, #333399, #FFFFFF, #000055); }
+   progressbar trough {
+     border: 1px solid black;
+     border-radius: 0px;
+     background-color: #b0b0b0;
+     box-shadow: inset 1px 1px #848484, inset -1px -1px #d1d1d1; }
+   progressbar.horizontal trough, progressbar.horizontal progress {
+     min-height: 18px; }
+   progressbar.vertical trough, progressbar.vertical progress {
+     min-width: 18px; }
+ 
+ treeview.view.progressbar, treeview.view.progressbar:disabled {
+   color: #FFFFFF;
+   border-radius: 0;
+   background-color: #9999FF; }
+ treeview.view.progressbar:focus, treeview.view.progressbar:selected:focus, treeview.view.progressbar:focus:selected, treeview.view.progressbar:focus:selected:focus, treeview.view.progressbar:disabled:selected {
+   border-radius: 0;
+   color: #9999FF;
+   background-color: #FFFFFF; }
+ treeview.view.trough {
+   color: #000000;
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 0;
+   border: none; }
+   treeview.view.trough:selected, treeview.view.trough:selected:focus {
+     color: #FFFFFF;
+     background-color: rgba(0, 0, 0, 0.1);
+     border-radius: 0;
+     border: none; }
+ infobar treeview.view trough, row:selected treeview.view trough {
+   background-color: rgba(0, 0, 0, 0.1); }
+ 
+ levelbar trough {
+   padding: 1px;
+   border-radius: 0; }
+ levelbar.horizontal.discrete block {
+   margin: 0 1px; }
+ levelbar.vertical.discrete block {
+   margin: 1px 0; }
+ levelbar block {
+   border: none;
+   padding: 2px;
+   border-radius: 0px;
+   background-color: #9999FF; }
+   levelbar block.high {
+     background-color: #3ec755; }
+   levelbar block.low {
+     background-color: #da870b; }
+   levelbar block.empty {
+     background-color: rgba(0, 0, 0, 0.1); }
+ 
+ scale {
+   min-height: 10px;
+   min-width: 10px;
+   padding: 12px; }
+   scale fill, scale trough {
+     border: 1px solid #b0b0b0;
+     border-radius: 4px;
+     background-color: #bbbbbb;
+     outline-offset: 2px;
+     box-shadow: inset 0 2px rgba(0, 0, 0, 0.2);
+     -gtk-outline-radius: 0; }
+     scale fill:disabled, scale trough:disabled {
+       background-color: #d1d1d1; }
+   scale.vertical fill, scale.vertical trough {
+     box-shadow: inset 2px 0 rgba(0, 0, 0, 0.2); }
+   scale highlight {
+     border: none;
+     border-radius: 4px;
+     background-color: transparent; }
+     scale highlight:disabled {
+       background-color: transparent; }
+       scale highlight:disabled:backdrop {
+         background-color: transparent; }
+     scale highlight:backdrop {
+       background-color: transparent; }
+   scale.horizontal indicator {
+     min-height: 6px;
+     min-width: 1px; }
+   scale.horizontal.fine-tune indicator {
+     min-height: 3px; }
+   scale.vertical indicator {
+     min-height: 1px;
+     min-width: 6px; }
+   scale.vertical.fine-tune indicator {
+     min-width: 3px; }
+   scale.fine-tune.horizontal {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     min-height: 14px; }
+   scale.fine-tune.vertical {
+     padding-left: 10px;
+     padding-right: 10px;
+     min-width: 14px; }
+   scale.fine-tune slider {
+     margin-top: -6px;
+     margin-bottom: -9px; }
+   scale.fine-tune fill, scale.fine-tune trough, scale.fine-tune highlight {
+     border-radius: 0;
+     -gtk-outline-radius: 0; }
+   scale.fine-tune marks.top {
+     margin-bottom: 8px;
+     margin-top: -13px; }
+   scale.fine-tune marks.bottom {
+     margin-top: 8px;
+     margin-bottom: -13px; }
+   scale.fine-tune marks.top {
+     margin-right: 8px;
+     margin-left: -13px; }
+   scale.fine-tune marks.bottom {
+     margin-left: 8px;
+     margin-right: -13px; }
+   scale slider {
+     min-height: 16px;
+     min-width: 15px;
+     margin: -6px;
+     margin-bottom: -7px;
+     border: none;
+     border-radius: 0;
+     color: #dbdbdb;
+     background-color: transparent;
+     background-image: url("assets/slider-horiz.png"); }
+     scale slider:hover {
+       color: #FFFFFF;
+       background-image: url("assets/slider-horiz.png"); }
+     scale slider:disabled {
+       -gtk-icon-shadow: none;
+       background-image: url("assets/slider-horiz-insensitive.png"); }
+       scale slider:disabled:backdrop {
+         -gtk-icon-shadow: none;
+         background-image: url("assets/slider-horiz-insensitive.png"); }
+     scale slider:backdrop {
+       color: #d6d6d6;
+       background-image: url("assets/slider-horiz-insensitive.png"); }
+   scale.vertical slider {
+     min-height: 15px;
+     min-width: 16px;
+     margin: -5px;
+     margin-right: -7px;
+     background-image: url("assets/slider-vert.png"); }
+     scale.vertical slider:hover {
+       background-image: url("assets/slider-vert.png"); }
+     scale.vertical slider:disabled {
+       background-image: url("assets/slider-vert-insensitive.png"); }
+       scale.vertical slider:disabled:backdrop {
+         background-image: url("assets/slider-vert-insensitive.png"); }
+     scale.vertical slider:backdrop {
+       background-image: url("assets/slider-vert-insensitive.png"); }
+   scale value {
+     color: alpha(currentColor, 0.35); }
+   scale marks {
+     color: alpha(currentColor, 0.35); }
+     scale marks mark {
+       box-shadow: 1px 1px white; }
+     scale marks.top {
+       margin-bottom: 6px;
+       margin-top: -12px; }
+     scale marks.bottom {
+       margin-top: 6px;
+       margin-bottom: -12px; }
+     scale marks.top {
+       margin-right: 6px;
+       margin-left: -12px; }
+     scale marks.bottom {
+       margin-left: 6px;
+       margin-right: -12px; }
+ 
+ /* scrollbar {
+   border: 1px solid black;
+   background-color: #b0b0b0;
+   box-shadow: inset 2px 2px #848484, inset -2px 0 #d1d1d1; } */
+   scrollbar trough {
+     border: none;
+     border-radius: 0; }
+   scrollbar button {
+     box-shadow: inset 1px 1px white, inset -1px -1px #bbbbbb; }
+     scrollbar button:active {
+       box-shadow: inset -1px -1px white, inset 1px 1px #bbbbbb; }
+     scrollbar button, scrollbar button:backdrop, scrollbar button:disabled, scrollbar button:disabled:backdrop {
+       border-radius: 0;
+       color: transparent;
+       padding: 0;
+       background-size: auto;
+       background-position: center center;
+       background-repeat: no-repeat; }
+   scrollbar.overlay-indicator {
+     opacity: 1; }
+   scrollbar.horizontal slider {
+     min-width: 45px;
+     min-height: 14px;
+     margin: 0;
+     border: 1px solid #4040dd;
+     border-top-color: #e0e0ff;
+     border-left-color: #e0e0ff;
+     border-radius: 0px;
+     background-clip: padding-box;
+     background-color: #9999FF;
+     background-position: center center;
+     background-image: url("assets/handle-horiz.png");
+     background-repeat: no-repeat; }
+   scrollbar.horizontal button {
+     min-height: 14px;
+     min-width: 14px;
+     margin-top: -1px;
+     margin-bottom: -1px; }
+     scrollbar.horizontal button.down {
+       background-image: url("assets/arrow-right.png"); }
+     scrollbar.horizontal button.up {
+       background-image: url("assets/arrow-left.png"); }
+   scrollbar.vertical slider {
+     min-width: 14px;
+     min-height: 45px;
+     margin: 0;
+     border: 1px solid #4040dd;
+     /* border-top-color: #e0e0ff;
+     border-left-color: #e0e0ff; */
+     border-radius: 0px;
+     background-clip: padding-box;
+     background-color: #9999FF;
+     background-position: center center;
+     background-image: url("assets/handle-vert.png");
+     background-repeat: no-repeat; }
+   scrollbar.vertical button {
+     min-height: 14px;
+     min-width: 14px;
+     margin-left: -1px;
+     margin-right: -1px; }
+     scrollbar.vertical button.down {
+       background-image: url("assets/arrow-down.png"); }
+     scrollbar.vertical button.up {
+       background-image: url("assets/arrow-up.png"); }
+   treeview ~ scrollbar.vertical {
+     border-top: 1px solid #b0b0b0;
+     margin-top: -1px; }
+ 
